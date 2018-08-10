@@ -1,4 +1,12 @@
 @grey: rgb(42, 49, 54);
+.removeselection {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
 
 html, body{
   min-height: 100%;
@@ -11,6 +19,7 @@ body{
   justify-content: stretch;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .wrapper{
@@ -28,6 +37,76 @@ header{
 main{
   background-color: rgb(245, 245, 245);
   flex: 1 0 auto;
+  .signin{
+    margin: 50px auto;
+    max-width: 260px;
+    text-align: center;
+    h2{
+      font-size: 28px;
+      font-weight: 200;
+      margin-bottom: 30px;
+    }
+  }
+  .signin-form{
+    input[type="password"],
+    input[type="email"]{
+      width: 100%;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #d4d4d4;
+      margin-bottom: 10px;
+      font-weight: 700;
+      &::-moz-placeholder{
+        color: #c7c7c7;
+      }
+      &::-webkit-input-placeholder{
+        color: #c7c7c7;
+      }
+    }
+    .privacy{
+      display: flex;
+      align-items: center;
+      margin: 10px 0 20px 0;
+      cursor: pointer;
+      .removeselection;
+      input{
+        margin-right: 15px;
+      }
+      p{
+        font-size: 13px;
+        text-align: left;
+        font-weight: 400;
+        span{
+          display: block;
+          color: #8a8a8a;
+        }
+      }
+    }
+    input[type="submit"]{
+      width: 100%;
+      text-align: center;
+      background-color: rgb(133,191,69);
+      border: 1px solid rgb(103,150,52);
+      padding: 5px;
+      color: white;
+      border-radius: 3px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: background-color .3s;
+      outline: none;
+      &:hover{
+        background-color: rgb(103,150,52);
+      }
+    }
+  }
+  .signin-forgotpass{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 25px;
+    display: block;
+    font-weight: 400;
+    color: #4c4c4c;
+  }
 }
 
 footer{
