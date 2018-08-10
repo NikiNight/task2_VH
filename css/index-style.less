@@ -25,6 +25,7 @@ body{
 .wrapper{
   max-width: 1500px;
   margin: auto;
+  padding: 0 10px;
 }
 
 header{
@@ -162,6 +163,39 @@ footer{
           border-right: none;
           padding-right: 0;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px){
+  footer{
+    .bottom-footer-line{
+      flex-direction: column;
+      text-align: center;
+      figure{
+        margin-bottom: 30px;
+      }
+      nav{
+        text-align: center;
+        a{
+          display: block;
+          border-right: none;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  footer{
+    .top-footer-line{
+      flex-direction: column;
+      text-align: center;
+      figure{
+        margin-bottom: 15px;
       }
     }
   }
