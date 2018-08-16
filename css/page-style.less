@@ -4,6 +4,10 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 16px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
 header{
@@ -24,12 +28,18 @@ header{
 .main-page-content{
   display: flex;
   justify-content: stretch;
+  height: 100%;
   .aside-bar{
     max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
     .search{
       width: 100%;
       border: none;
-      height: 63px;
+      height: 59px;
+      min-height: 59px;
       padding-left: 20px;
     }
     .separator{
@@ -39,7 +49,7 @@ header{
     }
     .communities{
       overflow-y: auto;
-      max-height: 600px;
+      max-height: 100%;
       .communities-data{
         display: flex;
         justify-content: space-between;
@@ -81,6 +91,7 @@ header{
     flex-direction: column;
     align-items: stretch;
     justify-content: stretch;
+    border-left: 1px solid #d4d4d4;
     .community-header{
       padding: 15px;
       display: flex;
@@ -125,7 +136,29 @@ header{
       flex-direction: column;
       justify-content: flex-end;
       .conversation{
-        height: 100%;
+        display: flex;
+        justify-content: stretch;
+        .messages{
+          width: 100%;
+        }
+        .participants{
+          overflow-y: auto;
+          max-height: 100%;
+          width: 300px;
+          background-color: #e2e2e2;
+          padding-left: 30px;
+          .title{
+            border-bottom: 1px solid #d4d4d4;
+            padding: 30px 0 20px 0;
+            font-weight: 700;
+            margin-bottom: 15px;
+          }
+          ul{
+            li{
+              margin-bottom: 10px;
+            }
+          }
+        }
       }
       .writting{
         padding: 10px;
