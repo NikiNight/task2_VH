@@ -29,11 +29,11 @@ header{
     .search{
       width: 100%;
       border: none;
-      height: 50px;
+      height: 63px;
       padding-left: 20px;
     }
     .separator{
-      padding: 10px 0;
+      padding: 15px 0;
       background-color: #e2e2e2;
       text-align: center;
     }
@@ -48,6 +48,9 @@ header{
         border-bottom: 1px solid #d4d4d4;
         &.selected{
           background-color: #e2e2e2;
+          .title{
+            font-weight: 700;
+          }
         }
         .title{
           text-overflow: ellipsis;
@@ -56,6 +59,7 @@ header{
           line-height: 25px;
           padding-right: 10px;
           padding-left: 15px;
+          width: 100%;
         }
         time{
           color: #9b9b9b;
@@ -72,6 +76,43 @@ header{
     }
   }
   .main-bar{
+    width: 100%;
+    .community-header{
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f6f6f6;
+      .community-info{
+        display: flex;
+        align-items: center;
+        img{
+          margin-right: 15px;
+        }
+        .name{
+          margin-bottom: 10px;
+          font-weight: 700;
+        }
+        .num{
+          color: #474747;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        .type{
+          font-weight: 700;
+          font-size: 14px;
+        }
 
+      }
+      button{
+        padding: 15px 30px;
+        background-color: #6bb600;
+        color: white;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+      }
+    }
   }
 }
