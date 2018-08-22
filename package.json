@@ -1,0 +1,31 @@
+{
+  "name": "task2_vh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViktoriyaVorozhun/task2_VH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViktoriyaVorozhun/task2_VH/issues"
+  },
+  "homepage": "https://github.com/ViktoriyaVorozhun/task2_VH#readme",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cssmin": "^0.2.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-less": "^4.0.1",
+    "gulp-order": "^1.1.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "series": "^0.3.3"
+  }
+}
