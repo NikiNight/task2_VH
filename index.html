@@ -17,15 +17,15 @@
     <div class="wrapper">
         <section class="signin">
             <h2>Sign in to your account</h2>
-            <form action method="post" class="signin-form">
+            <form action="someaction" method="post" class="signin-form">
                 <input type="email" name="email" placeholder="Email address">
                 <input type="password" name="password" placeholder="Password">
                 <label class="privacy">
                     <input type="checkbox" name="privacy">
-                    <p>
+                    <span class="privacy-title">
                         This is a private computer
                         <span>Keep me signed in and allow caching</span>
-                    </p>
+                    </span>
                 </label>
                 <input type="submit" value="Sign in">
             </form>
@@ -35,7 +35,7 @@
 </main>
 <footer>
     <div class="wrapper">
-        <section class="top-footer-line">
+        <div class="top-footer-line">
             <figure>
                 <img src="img/logo.png" alt="">
                 is a product
@@ -48,8 +48,8 @@
                 <a href="#"><img src="img/social.png" alt=""></a>
                 <a href="#"><img src="img/social.png" alt=""></a>
             </div>
-        </section>
-        <section class="bottom-footer-line">
+        </div>
+        <div class="bottom-footer-line">
             <figure>
                 <img src="img/logo.png" alt="">
                 &#9400; inc. 2018
@@ -62,7 +62,7 @@
                 <a href="#">Terms of service</a>
                 <a href="#">Site map</a>
             </nav>
-        </section>
+        </div>
     </div>
 </footer>
 </body>
