@@ -21,7 +21,7 @@ header{
 }
 
 main{
-  background-color: rgb(245, 245, 245);
+  background-color: @background-grey;
   flex: 1 0 auto;
   .signin{
     margin: 50px auto;
@@ -39,14 +39,14 @@ main{
       width: 100%;
       padding: 5px 10px;
       border-radius: 5px;
-      border: 1px solid #d4d4d4;
+      border: 1px solid @border-grey;
       margin-bottom: 10px;
       font-weight: 700;
       &::-moz-placeholder{
-        color: #c7c7c7;
+        color: @placeholder-grey;
       }
       &::-webkit-input-placeholder{
-        color: #c7c7c7;
+        color: @placeholder-grey;
       }
     }
     .privacy{
@@ -64,24 +64,24 @@ main{
         font-weight: 400;
         span{
           display: block;
-          color: #8a8a8a;
+          color: @dark-grey;
         }
       }
     }
     input[type="submit"]{
       width: 100%;
       text-align: center;
-      background-color: rgb(133,191,69);
-      border: 1px solid rgb(103,150,52);
+      background-color: @dark-green;
+      border: 1px solid darken(@dark-green, 10%);
       padding: 5px;
-      color: white;
+      color: @white;
       border-radius: 3px;
       font-weight: 400;
       cursor: pointer;
       transition: background-color .3s;
       outline: none;
       &:hover{
-        background-color: rgb(103,150,52);
+        background-color: darken(@dark-green, 10%);
       }
     }
   }
@@ -91,7 +91,7 @@ main{
     margin-top: 25px;
     display: block;
     font-weight: 400;
-    color: #4c4c4c;
+    color: @grey;
   }
 }
 
@@ -100,10 +100,10 @@ footer{
   flex: 0 0 auto;
 
   .top-footer-line{
-    color: white;
+    color: @white;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #4c4c4c;
+    border-bottom: 1px solid lighten(@grey, 20%);
     padding: 50px 0;
     figure{
       img{
@@ -126,7 +126,7 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 40px 0 100px 0;
-    color: #757575;
+    color: @dark-grey;
     figure{
       img{
         width: 150px;
@@ -136,13 +136,13 @@ footer{
     }
     nav{
       a{
-        color: #757575;
+        color: @dark-grey;
         text-decoration: none;
         padding: 0 10px;
-        border-right: 1px solid #757575;
+        border-right: 1px solid @dark-grey;
         transition: color .3s;
         &:hover{
-          color: lighten(#757575, 20%)
+          color: lighten(@dark-grey, 20%)
         }
         &:last-child{
           border-right: none;
